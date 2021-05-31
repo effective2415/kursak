@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Bebas";
+    src: url(./fonts/BebasNeue-Regular.woff);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgba(3,90,152,1) 28%, rgba(212,44,41,1) 76%);}
+header{
+    background-color: aqua;
+    font-family: "Bebas";
+    text-align: center;
+    padding: 20px 0;
+}
+nav{
+    background-color: coral;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    background-color: rgb(221, 221, 9);
+}
+nav ul li{
+    padding: 5px 20px;
+}
+.banner video{
+    margin-top: -16px;
+}
+.players ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+.players ul li{
+    display: flex;
+    flex-direction: column;
+}
+.history p{
+    text-align: justify;
+    font-size: 20px;
+    color: rgb(228, 226, 226);
+}
