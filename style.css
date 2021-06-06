@@ -8,25 +8,56 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(90deg, rgba(3,90,152,1) 28%, rgba(212,44,41,1) 76%);}
+    background: linear-gradient(90deg, rgba(3,90,152,1) 28%, rgba(212,44,41,1) 76%);
+    min-width: 480px;
+}
+    
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+h2{
+    color: white;
+    margin: 50px 0 20px 0;
+
+}
 header{
-    background-color: aqua;
+    background: linear-gradient(90deg, rgba(233,79,18,1) 0%, rgba(190,87,13,1) 35%, rgba(255,141,0,0.9108018207282913) 100%);
     font-family: "Bebas";
     text-align: center;
     padding: 20px 0;
 }
+header h1{
+    font-size: 70px;
+    color: aliceblue;
+    text-shadow: 3px 5px 6px rgb(204, 160, 123);
+}
 nav{
-    background-color: coral;
+    background: #363636;
+    background-image: url(./img/dark_grey_line_tile.png);
+    background-repeat: repeat-x;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 nav ul{
     display: flex;
     list-style-type: none;
     justify-content: flex-end;
-    background-color: rgb(221, 221, 9);
 }
 nav ul li{
     padding: 5px 20px;
 }
+nav ul li a{
+    color: white;
+    font-size: large;
+}
+nav ul li a:hover{
+    color: white;
+}
+
 .banner video{
     margin-top: -16px;
 }
@@ -41,8 +72,139 @@ nav ul li{
     display: flex;
     flex-direction: column;
 }
+.players ul li a{
+    text-align: center;
+}
 .history p{
     text-align: justify;
     font-size: 20px;
     color: rgb(228, 226, 226);
+}
+#slideshow{
+    text-align: center;
+    overflow: hidden;
+    width: 1110px;
+    margin: 0 auto;
+}
+  
+.slide-wrapper{
+    width: 11100px;
+    animation: slide 40s ease infinite;
+}
+.slide{
+    float: left;
+    width: 1110px;
+}
+.slide img{
+    width: 100%;
+}
+@keyframes slide{
+    7.5% {margin-left: 0px;}
+    10% {margin-left: -1110px;}
+    17.5% {margin-left: -1110px;}
+    20% {margin-left: -2220px;}
+    27.5% {margin-left: -2220px;}
+    30% {margin-left: -3330px;}
+    37.5% {margin-left: -3330px;}
+    40% {margin-left: -4440px;}
+    47.5% {margin-left: -4440px;}
+    50% {margin-left: -5550px;}
+    57.5% {margin-left: -5550px;}
+    60% {margin-left: -6660px;}
+    67.5% {margin-left: -6660px;}
+    70% {margin-left: -7770px;}
+    77.5% {margin-left: -7770px;}
+    80% {margin-left: -8880px;}
+    87.5% {margin-left: -8880px;}
+    90% {margin-left: -9990px;}
+    97.5% {margin-left: -9990px;}
+}
+.biography h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+.biography img{
+    float: left;
+    margin-right: 25px;
+    width: 200px;
+}
+.biography p{
+    font-size: 24px;
+    color: white;
+    text-align: justify;
+}
+footer{
+    background-size: contain;
+    background: linear-gradient(90deg, rgba(233,79,18,1) 0%, rgba(190,87,13,1) 35%, rgba(255,141,0,0.9108018207282913) 100%);
+}
+footer .container{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+@media screen and (max-width:1200px) {
+    header h1{
+        font-size: 40px;
+    }
+    #slideshow{
+        width: 728px;
+    }
+    .slide{
+        width: 728px;
+    }
+    @keyframes slide{
+        7.5% {margin-left: 0px;}
+        10% {margin-left: -728px;}
+        17.5% {margin-left: -728px;}
+        20% {margin-left: -1456px;}
+        27.5% {margin-left: -1456px;}
+        30% {margin-left: -2184px;}
+        37.5% {margin-left: -2184px;}
+        40% {margin-left: -2912px;}
+        47.5% {margin-left: -2912px;}
+        50% {margin-left: -3640px;}
+        57.5% {margin-left: -3640px;}
+        60% {margin-left: -4368px;}
+        67.5% {margin-left: -4368px;}
+        70% {margin-left: -5096px;}
+        77.5% {margin-left: -5096px;}
+        80% {margin-left: -5824px;}
+        87.5% {margin-left: -5824px;}
+        90% {margin-left: -6552px;}
+        97.5% {margin-left: -6552px;}
+    }
+}
+@media screen and (max-width:992px){
+    .players ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (max-width:768px) {
+    #slideshow{
+        width: 500px;
+    }
+    .slide{
+        width: 500px;
+    }
+    @keyframes slide{
+        7.5% {margin-left: 0px;}
+        10% {margin-left: -500px;}
+        17.5% {margin-left: -500px;}
+        20% {margin-left: -1000px;}
+        27.5% {margin-left: -1000px;}
+        30% {margin-left: -1500px;}
+        37.5% {margin-left: -1500px;}
+        40% {margin-left: -2000px;}
+        47.5% {margin-left: -2000px;}
+        50% {margin-left: -2500px;}
+        57.5% {margin-left: -2500px;}
+        60% {margin-left: -3000px;}
+        67.5% {margin-left: -3000px;}
+        70% {margin-left: -3500px;}
+        77.5% {margin-left: -3500px;}
+        80% {margin-left: -4000px;}
+        87.5% {margin-left: -4000px;}
+        90% {margin-left: -4500px;}
+        97.5% {margin-left: -4500px;}
+    }
 }
