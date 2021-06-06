@@ -181,30 +181,30 @@ footer .container{
 }
 @media screen and (max-width:768px) {
     #slideshow{
-        width: 500px;
+        width: 450px;
     }
     .slide{
-        width: 500px;
+        width: 450px;
     }
     @keyframes slide{
         7.5% {margin-left: 0px;}
-        10% {margin-left: -500px;}
-        17.5% {margin-left: -500px;}
-        20% {margin-left: -1000px;}
-        27.5% {margin-left: -1000px;}
-        30% {margin-left: -1500px;}
-        37.5% {margin-left: -1500px;}
-        40% {margin-left: -2000px;}
-        47.5% {margin-left: -2000px;}
-        50% {margin-left: -2500px;}
-        57.5% {margin-left: -2500px;}
-        60% {margin-left: -3000px;}
-        67.5% {margin-left: -3000px;}
-        70% {margin-left: -3500px;}
-        77.5% {margin-left: -3500px;}
-        80% {margin-left: -4000px;}
-        87.5% {margin-left: -4000px;}
-        90% {margin-left: -4500px;}
-        97.5% {margin-left: -4500px;}
+        10% {margin-left: -450px;}
+        17.5% {margin-left: -450px;}
+        20% {margin-left: -900px;}
+        27.5% {margin-left: -900px;}
+        30% {margin-left: -1350px;}
+        37.5% {margin-left: -1350px;}
+        40% {margin-left: -1800px;}
+        47.5% {margin-left: -1800px;}
+        50% {margin-left: -2250px;}
+        57.5% {margin-left: -2250px;}
+        60% {margin-left: -2700px;}
+        67.5% {margin-left: -2700px;}
+        70% {margin-left: -3150px;}
+        77.5% {margin-left: -3150px;}
+        80% {margin-left: -3600px;}
+        87.5% {margin-left: -3600px;}
+        90% {margin-left: -4050px;}
+        97.5% {margin-left: -4050px;}
     }
 }
